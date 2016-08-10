@@ -22,7 +22,10 @@ namespace Homework6
             }
             set
             {
-                channel = value;
+                if (value > 0 && value < 50)
+                {
+                    channel = value;
+                }
             }
         }
         public int Volume
@@ -33,7 +36,10 @@ namespace Homework6
             }
             set
             {
-                volume = value;
+                if (value < 100 && value > 0)
+                {
+                    volume = value;
+                }
             }
         }
         public bool IsOn
